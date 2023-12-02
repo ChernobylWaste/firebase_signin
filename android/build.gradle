@@ -8,8 +8,15 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:7.3.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // Memperbarui versi plugin Google Services ke versi terbaru
+        classpath 'com.google.gms:google-services:4.4.0'
     }
 }
+
+// Hapus bagian plugins terkait Google Services karena sudah didefinisikan di buildscript
+// plugins {
+//     id 'com.google.gms.google-services' version '4.4.0' apply false
+// }
 
 allprojects {
     repositories {
@@ -21,8 +28,6 @@ allprojects {
 rootProject.buildDir = '../build'
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
-}
-subprojects {
     project.evaluationDependsOn(':app')
 }
 

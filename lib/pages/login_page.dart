@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_login/components/my_button.dart';
 import 'package:firebase_login/components/my_textfield.dart';
 import 'package:firebase_login/components/squaretile.dart';
+import 'package:firebase_login/services/auth_services.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -173,9 +174,14 @@ class _LoginPageState extends State<LoginPage> {
               ),
 
               // Google Button
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [SquareTile(imagePath: 'assets/google.png')],
+                children: [
+                  SquareTile(
+                    onTap: () => Authservice().signInWithGoogle(),
+                    imagePath: 'assets/google.png',
+                  )
+                ],
               ),
 
               const SizedBox(

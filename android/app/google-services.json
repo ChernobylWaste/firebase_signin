@@ -12,7 +12,20 @@
           "package_name": "com.example.firebase_login"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "856417063081-317tmrpfdlurs2cvm35nodfq2a9noa30.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebase_login",
+            "certificate_hash": "c93e46b8df172d44be148a95ead9cefa6146823d"
+          }
+        },
+        {
+          "client_id": "856417063081-hhcu299askjk3hq8l6eap14u23bj4isn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyA3hkvprDjeKRCywNwKf7vWser2tXMfvSw"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856417063081-hhcu299askjk3hq8l6eap14u23bj4isn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "856417063081-6copj7kc8pk8o9pegptivpcpfbsq3e40.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firebaseLogin.RunnerTests"
+              }
+            }
+          ]
         }
       }
     }
